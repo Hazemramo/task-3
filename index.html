@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/test3.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--------- landing and navbar ---------->
+    <nav class="navbar px-4 navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/new.svg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <button class="animated-button my-4">
+            <svg
+              viewBox="0 0 24 24"
+              class="arr-2"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text">Modern Button</span>
+            <span class="circle"></span>
+            <svg
+              viewBox="0 0 24 24"
+              class="arr-1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section id="background-home"></section>
+
+    <!--------- main-content ---------->
+    <div class="container-main">
+      <div class="ARCH-PHILOSOPHHY">
+        <div class="container">
+          <!-- start abs section -->
+          <div class="landing">
+            <div class="container">
+              <!---------- navbar ----------->
+
+              <div class="land-back"></div>
+              <!---------- absouloute carousel ----------->
+              <div class="absoul-div position-relative">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div id="carouselExample" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            class="landing-img animate__slideInRight animate__animated"
+                            src="images/interior@2x.jpg"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                          <div class="caro-left-text">
+                            <h1 class="animate__animated animate__fadeInUp">
+                              Interior <br />
+                              Design
+                            </h1>
+                          </div>
+                          <div class="caro-right-text">
+                            <h5 class="animate__animated animate__fadeInLeft">
+                              Urban City
+                            </h5>
+                            <hr />
+                            <h5 class="animate__animated animate__fadeInLeft">
+                              03. Private properties
+                            </h5>
+                            <h5 class="animate__animated animate__fadeInLeft">
+                              in Nice, France.
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="overfloww">
+                            <img
+                              class="landing-img animate__slideInRight animate__animated"
+                              src="images/interior@2x.jpg"
+                              class="d-block w-100"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="caro-left-text">
+                            <h1 class="animate__animated animate__fadeInUp">
+                              Urban <br />
+                              City
+                            </h1>
+                          </div>
+                          <div class="caro-right-text">
+                            <h5 class="animate__animated animate__fadeInLeft">
+                              Architecture
+                            </h5>
+                            <hr class="animate__animated animate__fadeInLeft" />
+                            <h5>02. Private properties</h5>
+                            <h5 class="animate__animated animate__fadeInLeft">
+                              in Lazio, Italy.
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            class="landing-img animate__slideInRight animate__animated"
+                            src="images/interior@2x.jpg"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                          <div class="caro-left-text">
+                            <h1 class="animate__animated animate__fadeInUp">
+                              Building <br />
+                              villas
+                            </h1>
+                          </div>
+                          <div class="caro-right-text">
+                            <h5 class="animate__animated animate__fadeInLeft">
+                              Architecture
+                            </h5>
+                            <hr />
+                            <h5 class="animate__animated animate__fadeInLeft">
+                              Villa
+                            </h5>
+                            <h5 class="animate__animated animate__fadeInLeft">
+                              in Rome, Italy.
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide="prev"
+                      >
+                        <i class="fs-1 fa-solid fa-arrow-left"></i>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide="next"
+                      >
+                        <i class="fs-1 fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end abs section -->
+          <div class="row align-items-center">
+            <div class="first-col col-lg-6 col-md-12">
+              <img
+                class="first-img"
+                src="images/modern-styled-small-entryway.jpg"
+                alt=""
+              />
+            </div>
+            <div class="sec-col col-lg-6 col-md-12">
+              <h5 class="my-3">— ARCH PHILOSOPHY</h5>
+              <h2 class="top-text my-3">
+                As the complexity of buildings to increase, the field of
+                architecture became multi-disciplinary with technological
+                expertise.
+              </h2>
+              <div class="col mx-auto my-5">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        01 . Building the future cities
+                      </button>
+                      <hr class=".accor-hr" />
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the first item's accordion body.</strong
+                        >
+                        It is shown by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        02. Unique and influential design
+                      </button>
+                      <hr class=".accor-hr" />
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the second item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        03. Award-winning Architecture
+                      </button>
+                      <hr class=".accor-hr" />
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the third item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sec-row">
+            <h5 class="my-3">— ARCH PHILOSOPHY</h5>
+            <h2 class="top-text my-3">
+              As the complexity of buildings to increase, the field of
+              architecture became multi-disciplinary with technological
+              expertise.
+            </h2>
+            <div class="row mt-5 text-center">
+              <div class="col-md-4">
+                <h5 class="py-3">— Urban Codes</h5>
+                <h5 class="py-3">— Urban Codes</h5>
+                <h5 class="py-3">— Urban Codes</h5>
+              </div>
+              <div class="col-md-4">
+                <h5 class="py-3">— Urban Codes</h5>
+                <h5 class="py-3">— Urban Codes</h5>
+                <h5 class="py-3">— Urban Codes</h5>
+              </div>
+              <div class="col-md-4">
+                <h5 class="py-3">— Urban Codes</h5>
+                <h5 class="py-3">— Urban Codes</h5>
+                <h5 class="py-3">— Urban Codes</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="THE-PROCESS">
+        <div class="container">
+          <h5 class="my-5">— THE-PROCESS</h5>
+          <div class="row row-one">
+            <img src="images/left-img.jpg" class="position-absolute" alt="" />
+            <div class="col-md-4 position-relative">
+              <span class="num-abs position-absolute">02</span>
+              <h2 class="py-2">
+                Award-winning <br />
+                architecture_
+              </h2>
+              <h5 class="">
+                Interior design is the art and science of enhancing the
+                interiors, sometimes including the exterior, of a space or
+              </h5>
+            </div>
+            <div class="col-md-4">
+              <span class="num-abs position-absolute">02</span>
+              <h2 class="py-2">
+                Building the <br />
+                future cities_
+              </h2>
+              <h5 class="">
+                Interior design is the art and science of enhancing the
+                interiors, sometimes including the exterior, of a space or
+              </h5>
+            </div>
+          </div>
+          <div class="row row-one">
+            <div class="col-md-4 position-relative">
+              <span class="num-abs position-absolute">02</span>
+              <h2 class="py-2">
+                Building the <br />
+                future cities_
+              </h2>
+              <h5 class="">
+                Interior design is the art and science of enhancing the
+                interiors, sometimes including the exterior, of a space or
+              </h5>
+            </div>
+            <div class="col-md-4">
+              <span class="num-abs position-absolute">02</span>
+              <h2 class="py-2">
+                Building the <br />
+                future cities_
+              </h2>
+              <h5 class="">
+                Interior design is the art and science of enhancing the
+                interiors, sometimes including the exterior, of a space or
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------- building -------------->
+      <div class="Building-the d-flex align-items-center">
+        <div class="main-div position-relative col-md-9">
+          <div class="top-of-all-text position-absolute">
+            <h5 class="small-text">— LATEST PROJECTS</h5>
+            <h1 class="big-text">
+              Building the <br />
+              city marks
+            </h1>
+          </div>
+          <ul class="d-flex align-items-center">
+            <li class="rotate-element"><h5>Interior Design—</h5></li>
+            <li class="rotate-element"><h5>Residential</h5></li>
+            <li class="rotate-element"><h5>Construction</h5></li>
+            <li class="rotate-element"><h5>City planni g</h5></li>
+          </ul>
+        </div>
+      </div>
+
+      <!------------- carousel section -------------->
+      <div class="carousel-sec">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 p-md-3">
+            <h5>— LATEST PROJECTS</h5>
+            <h2 class="mb-5">Selected case studies</h2>
+            <ul>
+              <li class="list-item">
+                <a id="java-need" class="java-click" href="#">All projects</a>
+                <h5 class="top-right-absoul"></h5>
+              </li>
+              <li class="list-item">
+                <a class="" href="#">Brandin</a>
+                <h5 class="top-right-absoul"></h5>
+              </li>
+              <li class="list-item">
+                <a class="" href="#">Digital</a>
+                <h5 class="top-right-absoul"></h5>
+              </li>
+              <li class="list-item">
+                <a class="" href="#">Ecommerce</a>
+                <h5 class="top-right-absoul"></h5>
+              </li>
+              <li class="list-item">
+                <a class="" href="#">Print</a>
+                <h5 class="top-right-absoul"></h5>
+              </li>
+              <li class="last-item">
+                <a class="" href="#">See more</a>
+                <i class="fa-solid fa-arrow-right"></i>
+                <h5 class="top-right-absoul"></h5>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 p-4">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/caro-2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/caro-2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/caro-2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------- architecture team section -------------->
+      <div class="Architecture-Team w-100">
+        <div class="my-5 space-bet w-100 d-flex">
+          <h4>Architecture Team_</h4>
+          <h5>— MEET THE TEAM</h5>
+        </div>
+        <div class="row">
+          <div class="col-md-4 p-4">
+            <div class="image-before">
+              <div class="yellow-before">
+                <h5 class="rotate-text">Architecture-Team</h5>
+              </div>
+              <img src="images/sergio-garcia-KPjt_8jzCZc-unsplash.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 p-4">
+            <div class="image-before">
+              <div class="yellow-before">
+                <h5 class="rotate-text">Architecture-Team</h5>
+              </div>
+              <img src="images/sergio-garcia-v6BqDCXTSbs-unsplash.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 p-4">
+            <div class="image-before">
+              <div class="yellow-before">
+                <h5 class="rotate-text">Architecture-Team</h5>
+              </div>
+              <img src="images/sergio-garcia-wEX5e-4m6rM-unsplash.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------- client and black brands section -------->
+      <div class="clients w-100">
+        <div class="main-div">
+          <div class="row1">
+            <h5>client</h5>
+            <div
+              class="padding-style d-flex align-items-center justify-content-center"
+            >
+              <a class="text-white" href="#"
+                ><i class="fa-brands fa-slack"></i
+              ></a>
+            </div>
+            <div
+              class="padding-style d-flex align-items-center justify-content-center"
+            >
+              <a class="text-white" href="#"
+                ><i class="fa-brands fa-slack"></i
+              ></a>
+            </div>
+          </div>
+          <div class="row1">
+            <div
+              class="padding-style d-flex align-items-center justify-content-center"
+            >
+              <a class="text-white" href="#"
+                ><i class="fa-brands fa-css3-alt"></i
+              ></a>
+            </div>
+            <div
+              class="padding-style d-flex align-items-center justify-content-center"
+            >
+              <a class="text-white" href="#"
+                ><i class="fa-brands fa-slack"></i
+              ></a>
+            </div>
+            <div
+              class="padding-style d-flex align-items-center justify-content-center"
+            >
+              <a class="text-white" href="#"
+                ><i class="fa-brands fa-digg"></i
+              ></a>
+            </div>
+          </div>
+          <div class="row1">
+            <div
+              class="padding-style d-flex align-items-center justify-content-center"
+            >
+              <a class="text-white" href="#"
+                ><i class="fa-brands fa-slack"></i
+              ></a>
+            </div>
+            <div
+              class="padding-style d-flex align-items-center justify-content-center"
+            >
+              <a class="text-white" href="#"
+                ><i class="fa-brands fa-wordpress"></i
+              ></a>
+            </div>
+            <div
+              class="padding-style d-flex align-items-center justify-content-center"
+            >
+              <a class="text-white" href="#"
+                ><i class="fa-brands fa-slack"></i
+              ></a>
+            </div>
+            <div
+              class="padding-style d-flex align-items-center justify-content-center"
+            >
+              <a class="text-white" href="#"
+                ><i class="fa-brands fa-slack"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel3 w-100">
+        <div class="col-md-7">
+          <div
+            id="carouselExampleRide"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="bg-carousel w-100">
+                  <p class="z-5">
+                    Dan, Chief Designer — "Hub began as a collaborative
+                    architectural and landscape workshop, and has remained true
+                    to its trans disciplinary way of thinking since its
+                    inception."
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="bg-carousel w-100">
+                  <p class="z-5">
+                    Dan, Chief Designer — "Hub began as a collaborative
+                    architectural and landscape workshop, and has remained true
+                    to its trans disciplinary way of thinking since its
+                    inception."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleRide"
+              data-bs-slide="prev"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleRide"
+              data-bs-slide="next"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!----------- archNews section -------->
+      <div class="arshnews">
+        <div class="my-5 space-bet w-100 d-flex">
+          <h4>Architecture Team_</h4>
+          <h5>— MEET THE TEAM</h5>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <div class="card-img-div position-relative">
+                <div class="btn-abs btn bg-white position-absolute">read +</div>
+                <img src="images/caro-one.jpg" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Collective Living Challenge <br />
+                  In modern design
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <div class="card-img-div position-relative">
+                <div class="btn-abs btn bg-white position-absolute">read +</div>
+                <img
+                  src="images/pexels-asadphoto-1450360.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Collective Living Challenge <br />
+                  In modern design
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <div class="card-img-div position-relative">
+                <div class="btn-abs btn bg-white position-absolute">read +</div>
+                <img src="images/caro-3.jpg" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Collective Living Challenge <br />
+                  In modern design
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer position-relative">
+        <img
+          class="footer-img position-absolute"
+          src="images/footer-image.jpg"
+          alt=""
+        />
+        <div class="footer-main position-absolute">
+          <div class="top-div d-flex">
+            <h1>Let's Build Something Great Together</h1>
+            <img class="footer-logo" src="images/logo-footer.svg" alt="" />
+          </div>
+          <div class="row">
+            <h5 class="">London</h5>
+            <div class="col-md-4">
+              <h5>
+                21 Valentin Paterson <br />
+                Road 24, London
+              </h5>
+            </div>
+            <div class="col-md-4">
+              <h5>+ 124 875 89 90 info@liquid-themes.com</h5>
+            </div>
+            <div class="col-md-4">
+              <p>
+                Interior design is the art and science of enhancing the
+                interiors, sometimes including the exterior, of a space or
+                building, to achieve a healthier and more aesthetically.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <h5 class="">Paris</h5>
+            <div class="col-md-4">
+              <h5>
+                290 Maryam Springs <br />
+                Courbevoie, Paris
+              </h5>
+            </div>
+            <div class="col-md-4">
+              <h5>+11 21 5941 295</h5>
+            </div>
+          </div>
+          <div class="bottom-div d-md-flex">
+            <ul class="d-flex">
+              <li><a href="#">Fb.</a></li>
+              <li><a href="#">In.</a></li>
+              <li><a href="#">Lk.</a></li>
+              <li><a href="#">Tw.</a></li>
+            </ul>
+            <ul class="d-flex">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Company</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- start about us section -->
+    <!-- <section id="about-us">
+      <div class="container">
+        <h></h>
+        <div class="row">
+          <div class="col-md-6">
+            <div id="text-about">
+              <h2></h2>
+              <p></p>
+              <a href=""></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="about-img">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- end about us section -->
+
+    <script src="js/test3.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/test3.js"></script>
+  </body>
+</html>

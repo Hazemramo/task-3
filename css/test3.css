@@ -1,0 +1,729 @@
+/* --------- landing and navbar-------- */
+:root {
+  --dark-lon: #454545;
+}
+
+/* start navbar */
+
+/* end navbar */
+
+/* start section background */
+#background-home {
+  background-color: #ffda01;
+  width: 100%;
+  height: 50vh;
+}
+/* end section background */
+
+/* start landing section */
+.landing {
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  top: -20rem;
+  .land-back {
+    width: 100%;
+    min-height: 674px;
+  }
+  .absoul-div {
+    width: 100%;
+    height: 389px;
+    background-image: url(../images/lines-bg.svg);
+    /* background-color: #f8f8f8; */
+
+    /* ----------landing carousel--------  */
+    .carousel-inner {
+      overflow: visible;
+      top: 280px;
+    }
+    .col-center {
+      position: absolute;
+      margin-left: 12%;
+      top: -443px;
+      overflow: hidden;
+      height: 770px;
+    }
+    .carousel-control-next {
+      top: -88%;
+      right: 32%;
+      color: black;
+      font-size: 50px;
+    }
+    .carousel-control-prev {
+      top: -88%;
+      left: 34%;
+      color: black;
+      font-size: 50px;
+    }
+    .carousel-control-next:active {
+      color: black;
+    }
+  }
+  .carousel-item {
+    .overfloww {
+      overflow: hidden;
+      width: 100%;
+    }
+    hr {
+      opacity: 1;
+      background: black;
+      height: 2px;
+      width: 222px;
+      border-radius: 20px;
+    }
+    h5 {
+      font-size: 28px;
+    }
+    h1 {
+      color: rgb(0, 0, 0);
+      font-family: "Merriweather", serif;
+      font-weight: 600;
+      line-height: 156px;
+      font-size: clamp(20px, 25vh, 150px);
+    }
+    .landing-img {
+      width: 87%;
+      float: right;
+    }
+    .caro-left-text {
+      overflow: hidden;
+      position: absolute;
+      top: -231px;
+      left: 8px;
+    }
+    .caro-right-text {
+      overflow: hidden;
+      position: absolute;
+      top: -164px;
+      right: 171px;
+    }
+  }
+}
+.landing #carouselExample {
+  position: relative;
+  top: -36rem;
+}
+/* end landing section */
+
+.navbar {
+  padding: 0;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+
+  /* -------navbar button--------- */
+
+  .animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: white;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    font-size: 0.8rem;
+  }
+
+  .animated-button:hover {
+    box-shadow: 3px 3px 27px -1px black;
+    color: white;
+    background-color: #ffda01;
+    border-radius: 5px;
+  }
+
+  .animated-button:hover .arr-1 {
+    right: -25%;
+    color: white;
+  }
+
+  .animated-button:hover .arr-2 {
+    left: 2px;
+    color: white;
+  }
+
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+
+  .animated-button:hover svg {
+    fill: #212121;
+  }
+
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px rgb(255, 255, 255);
+  }
+
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+}
+
+/*---------container-main---------*/
+.container-main {
+  background-image: url(../images/lines-bg.svg);
+  background-color: #f8f8f8;
+
+  /* ----------ARCH-PHILOSOPHY----------- */
+
+  .first-col {
+    width: 36%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sec-section {
+    padding: 50px 89px;
+  }
+  .sec-row {
+    padding: 50px 116px;
+  }
+  .sec-col {
+    padding: 6rem 2rem;
+    background-image: none;
+    background: none;
+  }
+  .top-text {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+  }
+  .first-img {
+    width: 100%;
+  }
+}
+
+/*----------accordion button---------*/
+.accordion-button {
+  box-shadow: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: 700; 
+  .accor-hr {
+    border-top: 1px solid rgb(0 0 0);
+  }
+}
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+  box-shadow: none;
+  background-image: none;
+  background: none;
+}
+.accordion-item {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-image: url(../images/lines-bg.svg);
+  background-image: none;
+  background-color: none;
+  background: none;
+  box-shadow: none;
+}
+
+/* ------THE-PROCESS sec------ */
+.THE-PROCESS {
+  width: 100%;
+  padding: 35px 340px;
+  justify-content: space-between;
+  min-height: 665px;
+  /* ------row-one------ */
+
+  .row-one {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 65px;
+    position: relative;
+
+    /* ---absolute-background-number----- */
+    .num-abs {
+      transform: rotate(-90deg);
+      position: absolute;
+      top: -42px;
+      right: -51px;
+      font-size: 162px;
+      -webkit-text-stroke: 3px #000;
+      color: transparent;
+      opacity: 0.05;
+      /* transition: opacity .65s cubic-bezier(.23,1,.32,1); */
+    }
+    .col-md-4 {
+      z-index: 2;
+    }
+    h2 {
+      font-family: "Merriweather", serif;
+    }
+    h5 {
+      font-family: "Merriweather", serif;
+      font-size: 0.8rem;
+    }
+    img {
+      top: 1px;
+      left: -510px;
+      width: 754px;
+    }
+  }
+}
+
+/* --------building sec------ */
+.Building-the {
+  background: none;
+  margin: 50px 0;
+  .top-of-all-text {
+    color: white;
+    font-family: "Merriweather", serif;
+    top: 13%;
+    left: 169px;
+    z-index: 5;
+    .big-text {
+      font-size: 78px;
+    }
+    .small-text {
+    }
+  }
+  ul {
+    background-image: url(../images/interior@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  /* ----------list-content--------- */
+  .rotate-element {
+    width: 268px;
+    padding: 50px;
+    border-left: 1px solid white;
+    list-style: none;
+    height: 549px;
+    margin: 1px;
+    position: relative;
+    h5 {
+      transform: rotate(-90deg);
+      position: absolute;
+      bottom: 70px;
+      right: -19px;
+      color: white;
+    }
+    span {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      bottom: -418px;
+      left: 107px;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+  /* ---------list_hover--------- */
+  .rotate-element:hover {
+    /* background-color: #99999952; */
+    backdrop-filter: blur(2px);
+  }
+}
+
+/*---------carousel-sec---------*/
+.carousel-sec {
+  width: 100%;
+  margin: 50px 0;
+  padding: 50px 100px;
+  .carousel {
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  ul {
+    padding-left: 0;
+  }
+  .list-item {
+    list-style: none;
+    margin-bottom: 25px;
+    position: relative;
+    a {
+      text-decoration: none;
+      color: rgb(0 0 0 / 51%);
+      padding: 5px;
+    }
+    a::before {
+      content: " ";
+      background-color: black;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      position: absolute;
+      border-radius: 10px;
+      transition: 0.5s;
+    }
+    a:hover {
+      color: black;
+    }
+    a:hover:before {
+      width: 79px;
+    }
+    .top-right-absoul {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: black;
+    }
+  }
+  .last-item {
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-weight: 600;
+    a {
+      color: rgb(112, 112, 112);
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    i {
+      color: rgb(112, 112, 112);
+      font-size: 12px;
+    }
+  }
+  .last-item:hover {
+    a {
+      color: black;
+    }
+    i {
+      color: black;
+    }
+  }
+}
+
+/*---------Architecture-Team---------*/
+.Architecture-Team {
+  padding: 50px 100px;
+  img {
+    width: 100%;
+  }
+  .image-before {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .yellow-before {
+    font-family: "Merriweather", serif;
+    left: -400px;
+    position: absolute;
+    content: " ";
+    background-color: #ffda01eb;
+    top: 0;
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;
+    .rotate-text {
+      font-size: 24px;
+      transform: rotate(-90deg);
+      position: relative;
+      top: 54%;
+      left: -140px;
+      color: var(--dark-lon);
+    }
+  }
+  .image-before:hover {
+    .yellow-before {
+      width: 100%;
+      left: 0;
+    }
+  }
+  .space-bet {
+    justify-content: space-between;
+  }
+}
+.clients {
+  width: 100%;
+  min-height: 1000px;
+  margin-top: 150px;
+  i {
+    font-size: 39px;
+    color: rgb(116, 116, 116);
+  }
+  .padding-style {
+    border: 1px solid rgba(116, 116, 116, 0.315);
+    padding: 100px;
+  }
+  .main-div {
+    /* margin-left: 109px; */
+    background-color: black;
+    padding: 100px 200px 100px 50px;
+  }
+  .main-div .row1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    h5 {
+      padding: 91px;
+    }
+  }
+}
+.carousel3 {
+  padding: 100px 0;
+  .col-md-7 {
+    margin-left: auto;
+    margin-right: auto;
+    .carousel-inner {
+      background-image: url(../images/left-img.jpg);
+      background-repeat: no-repeat;
+      background-size: 462px;
+      background-position: center center;
+      padding: 20px;
+    }
+    i {
+      color: black;
+    }
+    .carousel-control-prev {
+      left: -122px;
+    }
+    .carousel-control-next {
+      right: -122px;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Merriweather", serif;
+  }
+}
+/* --------arshnews and cards------- */
+.arshnews {
+  padding: 100px 50px;
+  .space-bet {
+    justify-content: space-between;
+    padding: 0 86px;
+  }
+  /* -------card------ */
+  .card {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    background: none;
+    background-color: none;
+    padding: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    .card-img-div {
+      overflow: hidden;
+      max-width: 303px;
+      max-height: 213px;
+    }
+    .card-title {
+      font-size: 1rem;
+    }
+    .card-text {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .card-body {
+      padding: 23px 0;
+    }
+    img {
+      border-radius: 0;
+      width: 100%;
+      transition: 0.5s ease;
+    }
+    img:hover {
+      width: 113%;
+    }
+    .btn-abs {
+      border-radius: 0;
+      color: black;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+/* --------footer with absolute image------- */
+.footer {
+  background-color: none;
+  color: white;
+  width: 100%;
+  min-height: 1059px;
+  .footer-img {
+    width: 80%;
+    top: 0;
+    right: 0;
+  }
+}
+/* --------main-footer-content------- */
+.footer-main {
+  width: 80%;
+  background-color: var(--dark-lon);
+  padding: 150px 70px 100px 250px;
+  bottom: 0;
+  left: 0;
+  font-family: "Merriweather", serif;
+
+  .footer-logo {
+    width: 50px;
+    position: relative;
+  }
+  .row {
+    width: 78%;
+    margin-bottom: 20px;
+  }
+
+  /* --------top-footer-div------- */
+  .top-div {
+    justify-content: space-between;
+    margin-bottom: 60px;
+    img {
+      top: -78px;
+    }
+    h1 {
+      width: 34%;
+    }
+  }
+
+  /* --------bottom-footer-div------- */
+  .bottom-div {
+    margin-top: 73px;
+    justify-content: space-between;
+    ul {
+      padding-left: 0;
+    }
+    li {
+      list-style: none;
+      margin-right: 25px;
+    }
+    li a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+/* media-screen-details */
+@media (max-width: 768px) {
+  .THE-PROCESS .num-abs {
+    left: 83px;
+  }
+  .ARCH-PHILOSOPHHY .sec-row {
+    padding: 50px 0;
+  }
+  .Architecture-Team {
+    padding: 50px 50px;
+  }
+  .carousel-sec {
+    padding: 50px 0;
+  }
+  .carousel-sec .col-md-6.p-md-3 {
+    text-align: center;
+  }
+  .last-item {
+    margin-left: 41%;
+  }
+  .footer-main .col-md-4 {
+    padding-top: 30px;
+  }
+  .footer-main {
+    padding: 50px 50px 50px 50px;
+  }
+  .arshnews {
+    padding: 0;
+  }
+  .landing .absoul-div .col-center {
+    margin-left: 0;
+  }
+  .landing .landing-img.animate__slideInRight.animate__animated {
+    width: 100%;
+  }
+  .landing .caro-left-text h1 {
+    line-height: 100px;
+    font-size: clamp(20px, 25vh, 89px);
+  }
+  .main-div .top-of-all-text {
+    left: 36px;
+  }
+  .main-div .top-of-all-text .big-text {
+    font-size: 58px;
+  }
+}
+@media (max-width: 992px) {
+  .THE-PROCESS {
+    padding: 5px;
+  }
+  .main-div {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .landing .caro-right-text {
+    display: none;
+  }
+  .footer-main {
+    width: 100%;
+  }
+  .footer .footer-img {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .main-div {
+    margin-left: 109px;
+  }
+}
+
+/* start a */
+#about-us {
+  padding: 10px;
+  h1 {
+  }
+}
+/* end a */
